@@ -17,6 +17,6 @@ public class RouteConfig {
 
     @Bean
     public RouteLocator myRoutes(RouteLocatorBuilder builder) {
-        return builder.routes().route(p -> p.path("/get").filters(f->f.addRequestHeader("hello","world")).uri("http://httpbin.org:80")).build();
+        return builder.routes().route(p -> p.path("/get-test").filters(f->f.addRequestHeader("hello","world")).uri("http://httpbin.org:80")).build();
     }
 }

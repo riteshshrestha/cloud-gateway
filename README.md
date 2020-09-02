@@ -14,3 +14,8 @@ Exploring Spring Cloud Gateway
 
 ## Start Application
 - `mvn spring-boot:run`
+
+
+
+## Reference
+- [WebFilter Factories](https://www.baeldung.com/spring-cloud-gateway-webfilter-factories)

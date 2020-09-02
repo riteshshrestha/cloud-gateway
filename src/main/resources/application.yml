@@ -12,5 +12,19 @@ spring:
           uri: lb://internal-payment-service
           predicates:
             - Path=/api/payment-service
+        - id: request-header
+          uri: https://httpbin.org
+          predicates:
+            - Path=/get/**
+          filters:
+            - AddRequestHeader=My-Header-Good,Good
+            - AddRequestHeader=My-Header-Remove,Remove
+            - AddRequestParameter=var, good
+            - AddRequestParameter=var2, remove
+            - MapRequestHeader=My-Header-Good, My-Header-Bad
+            - MapRequestHeader=My-Header-Set, My-Header-Bad
+            - SetRequestHeader=My-Header-Set, Set
+            - RemoveRequestHeader=My-Header-Remove
+            - RemoveRequestParameter=var2
 
 
