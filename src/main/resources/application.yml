@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: rs-gateway-service
+  cloud:
+    gateway:
+      routes:
+        - id: order-service
+          uri: lb://internal-order-service
+          predicates:
+            - Path=/api/order-service
+        - id: payment-service
+          uri: lb://internal-payment-service
+          predicates:
+            - Path=/api/payment-service
+
+
