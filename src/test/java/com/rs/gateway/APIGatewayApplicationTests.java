@@ -1,10 +1,10 @@
-package rsspringcloudgateway.rsspringcloudgateway;
+package com.rs.gateway;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class RsSpringCloudGatewayApplicationTests {
+class APIGatewayApplicationTests {
 
     @Test
     void contextLoads() {
