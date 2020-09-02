@@ -1,3 +1,5 @@
+[![CircleCI](https://circleci.com/gh/riteshshrestha/cloud-gateway.svg?style=shield)](https://circleci.com/gh/riteshshrestha/cloud-gateway)
+
 # cloud-gateway
 
 Exploring Spring Cloud Gateway
