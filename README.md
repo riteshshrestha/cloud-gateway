@@ -17,6 +17,14 @@ Exploring Spring Cloud Gateway
 ## Start Application
 - `mvn spring-boot:run`
 
+## Some Description
+
+Routes define how the Gateway will process incoming request
+Each Route is composed of Predicates, Filters and a URI
+
+Predicates determine whether the Route matches any given request
+Filters apply behavior to matching requests or their responses
+The URI determines where the request will be forwarded after filtering`
 
 
 ## Reference
